@@ -1,0 +1,12 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: server01
+  cloud:
+    nacos:
+      discovery:
+        server-addr: @nacos.port@
+        ip: @nacos.ip@
+        group: gatewaynacos
+        namespace: demo　
