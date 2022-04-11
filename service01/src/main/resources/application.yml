@@ -6,7 +6,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: @nacos.port@
-        ip: @nacos.ip@
-        group: gatewaynacos
-        namespace: demo　
+        server-addr: 172.23.35.16:8848
+#        ip: @nacos.ip@
+        group: gateway
+        namespace: gateway
