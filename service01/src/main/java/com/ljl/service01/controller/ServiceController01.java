@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "service01")
-public class Controller {
+@RequestMapping(value = "s01")
+public class ServiceController01 {
     @Autowired
     private ServiceClient01 serviceClient01;
 
@@ -17,7 +17,7 @@ public class Controller {
         return "hello";
     }
 
-    @GetMapping("/hello/api")
+    @GetMapping("/hello/api02")
     public void helloApi(){
         serviceClient01.test("调用api");
     }
